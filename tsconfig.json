@@ -1,16 +1,32 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components"],
+    },
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -22,5 +38,5 @@
   },
   "include": [
     "src"
-  ]
+, "prettier.config.js"  ]
 }
